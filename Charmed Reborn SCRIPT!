@@ -10,7 +10,7 @@ local Tab1 = Window:MakeTab({
 
 
 local Section1 = Tab1:AddSection({
-	Name = "CHARACTER"
+	Name = "Character"
 })
 
 
@@ -151,6 +151,30 @@ Tab1:AddButton({
       		game.ReplicatedStorage.Change:FireServer("Mabel")
   	end    
 })
+
+Tab1:AddButton({
+	Name = "Source",
+	Callback = function()
+      		game.ReplicatedStorage.Change:FireServer("Source")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Cole",
+	Callback = function()
+      		game.ReplicatedStorage.Change:FireServer("Cole")
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Seer",
+	Callback = function()
+      		game.ReplicatedStorage.Change:FireServer("Seer")
+  	end    
+})
+
+
+
 
 local Tab2 = Window:MakeTab({
 	Name = "Powers/Spells",
