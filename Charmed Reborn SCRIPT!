@@ -184,7 +184,7 @@ local Tab3 = Window:MakeTab({
 })
 
 
-Tab2:AddButton({
+Tab3:AddButton({
 	Name = "Feed",
 	Callback = function()
         game.Players.LocalPlayer.HungerVal.Value =  game.Players.LocalPlayer.HungerVal.Value + 1000
