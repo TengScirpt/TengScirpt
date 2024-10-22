@@ -190,6 +190,11 @@ Tab2:AddButton({
          game.Workspace.Locations.Spells.Hollow.Paige.Value = true
          game.Workspace.Locations.Spells.Hollow.Prue.Value = true
          game.Workspace.Locations.Spells.Hollow.Phoebe.Value = true
+	wait(1)
+         game.Workspace.Locations.Spells.Hollow.Piper.Value = false
+         game.Workspace.Locations.Spells.Hollow.Paige.Value = false
+         game.Workspace.Locations.Spells.Hollow.Prue.Value = false
+         game.Workspace.Locations.Spells.Hollow.Phoebe.Value = false
   	end    
 })
 
