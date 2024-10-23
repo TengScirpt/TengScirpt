@@ -308,7 +308,7 @@ Tab4:AddBind({
 	Hold = false,
 	Callback = function()
 	local mouse = game.Players.LocalPlayer:GetMouse()
-	game.ReplicatedStorage.Events.Christy.TelepathicPainInducement:FireServer(mouse.Target)
+	game.ReplicatedStorage.Events.Christy.UltimatePower:FireServer(mouse.Target)
 	end    
 })
 
