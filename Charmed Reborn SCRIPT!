@@ -266,6 +266,13 @@ Tab2:AddButton({
   	end    
 })
 
+
+Tab2:AddButton({
+	Name = "Curse someone/ ONLY PHOEBE",
+	Callback = function()
+	game.ReplicatedStorage.Events.Spells["To Blood Curse Someone"]:FireServer()
+  	end    
+})
 local Tab3 = Window:MakeTab({
 	Name = "No Hunger!",
 	Icon = "0",
