@@ -203,9 +203,23 @@ Tab2:AddButton({
 })
 
 Tab2:AddButton({
+	Name = "Banish the hollow spell",
+	Callback = function()
+	game.ReplicatedStorage.Events.Spells["To Banish The Hollow"]:FireServer()
+  	end    
+})
+
+Tab2:AddButton({
 	Name = "Become Evill Phoebe",
 	Callback = function()
         game.ReplicatedStorage.Events.Misc.TurnEvilPhoebe:FireServer()
+  	end    
+})
+
+Tab2:AddButton({
+	Name = "To relingquish woggyman",
+	Callback = function()
+	game.ReplicatedStorage.Events.Spells["To Vanquish The Woogy Man"]:FireServer()
   	end    
 })
 
@@ -230,6 +244,20 @@ Tab2:AddButton({
   	end    
 })
 
+Tab2:AddButton({
+	Name = "Protection Spelll",
+	Callback = function()
+	game.ReplicatedStorage.Events.Spells["To Protect A Space"]:FireServer()
+  	end    
+})
+
+
+Tab2:AddButton({
+	Name = "Summon Demon Spell",
+	Callback = function()
+	game.ReplicatedStorage.Events.Spells["To Summon A Demon"]:FireServer()
+  	end    
+})
 
 local Tab3 = Window:MakeTab({
 	Name = "No Hunger!",
