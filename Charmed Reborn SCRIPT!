@@ -210,6 +210,13 @@ Tab2:AddButton({
 })
 
 Tab2:AddButton({
+	Name = "Hollow Spell / Part2",
+	Callback = function()
+	game.ReplicatedStorage.Events.Spells["To Summon The Hollow"]:FireServer()
+  	end    
+})
+
+Tab2:AddButton({
 	Name = "Become Evill Phoebe",
 	Callback = function()
         game.ReplicatedStorage.Events.Misc.TurnEvilPhoebe:FireServer()
