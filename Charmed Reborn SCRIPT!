@@ -190,11 +190,15 @@ Tab2:AddButton({
          game.Workspace.Locations.Spells.Hollow.Paige.Value = true
          game.Workspace.Locations.Spells.Hollow.Prue.Value = true
          game.Workspace.Locations.Spells.Hollow.Phoebe.Value = true
+         game.Workspace.Locations.Spells.Hollow.Christy.Value = true
+         game.Workspace.Locations.Spells.Hollow.Billie.Value = true
 	wait(1)
          game.Workspace.Locations.Spells.Hollow.Piper.Value = false
          game.Workspace.Locations.Spells.Hollow.Paige.Value = false
          game.Workspace.Locations.Spells.Hollow.Prue.Value = false
          game.Workspace.Locations.Spells.Hollow.Phoebe.Value = false
+         game.Workspace.Locations.Spells.Hollow.Christy.Value = false
+         game.Workspace.Locations.Spells.Hollow.Billie.Value = false
   	end    
 })
 
@@ -202,6 +206,20 @@ Tab2:AddButton({
 	Name = "Become Evill Phoebe",
 	Callback = function()
         game.ReplicatedStorage.Events.Misc.TurnEvilPhoebe:FireServer()
+  	end    
+})
+
+Tab2:AddButton({
+	Name = "Illussion Fire Spell",
+	Callback = function()
+        game.ReplicatedStorage.Events.Misc.TurnEvilPhoebe:FireServer()
+  	end    
+})
+
+Tab2:AddButton({
+	Name = "Erase Painful Memory/ ONLY Billie",
+	Callback = function()
+	game.ReplicatedStorage.Events.Spells["To Erase A Painful Memory"]:FireServer()
   	end    
 })
 
