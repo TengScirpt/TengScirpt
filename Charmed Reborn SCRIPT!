@@ -314,7 +314,7 @@ Tab4:AddBind({
 
 Tab4:AddBind({
 	Name = "Ultimate Power/Billie!",
-	Default = Enum.KeyCode.X,
+	Default = Enum.KeyCode.Z,
 	Hold = false,
 	Callback = function()
 	local mouse = game.Players.LocalPlayer:GetMouse()
