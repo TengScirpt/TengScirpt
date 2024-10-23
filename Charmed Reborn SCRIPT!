@@ -217,6 +217,13 @@ Tab2:AddButton({
 })
 
 Tab2:AddButton({
+	Name = "Heal With Fire /ONLY PHOEBE",
+	Callback = function()
+	game.ReplicatedStorage.Events.Spells["To Heal A being With Fire"]:FireServer()
+  	end    
+})
+
+Tab2:AddButton({
 	Name = "Erase Painful Memory/ ONLY Billie",
 	Callback = function()
 	game.ReplicatedStorage.Events.Spells["To Erase A Painful Memory"]:FireServer()
