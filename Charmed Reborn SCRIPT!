@@ -177,7 +177,7 @@ Tab1:AddButton({
 
 
 local Tab2 = Window:MakeTab({
-	Name = "Powers/Spells",
+	Name = "Spells",
 	Icon = "0",
 	PremiumOnly = false
 })
@@ -292,6 +292,24 @@ Tab3:AddButton({
 	Callback = function()
         game.Players.LocalPlayer.HungerVal.Value =  game.Players.LocalPlayer.HungerVal.Value + 100
   	end    
+})
+
+
+local Tab4 = Window:MakeTab({
+	Name = "Powers!",
+	Icon = "0",
+	PremiumOnly = false
+})
+
+
+Tab4:AddBind({
+	Name = "Ultimate Power/Christy!",
+	Default = Enum.KeyCode.E,
+	Hold = false,
+	Callback = function()
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	game.ReplicatedStorage.Events.Christy.UltimatePower:FireServer(mouse.Target)
+	end    
 })
 
 
