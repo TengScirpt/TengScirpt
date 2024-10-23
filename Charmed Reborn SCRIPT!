@@ -286,6 +286,13 @@ local Tab3 = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab3:AddButton({
+	Name = "Feed",
+	Callback = function()
+	game.Players.LocalPlayer.HungerVal.Value = game.Players.LocalPlayer.HungerVal.Value + 200
+  	end    
+})
+
 
 Tab3:AddButton({
 	Name = "Feed",
@@ -307,8 +314,8 @@ Tab4:AddBind({
 	Default = Enum.KeyCode.X,
 	Hold = false,
 	Callback = function()
-	local mouse = game.Players.LocalPlayer:GetMouse()
-	game.ReplicatedStorage.Events.Christy.UltimatePower:FireServer(mouse.Target)
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		game.ReplicatedStorage.Events.Christy.UltimatePower:FireServer(mouse.Target)
 	end    
 })
 
@@ -317,8 +324,8 @@ Tab4:AddBind({
 	Default = Enum.KeyCode.Z,
 	Hold = false,
 	Callback = function()
-	local mouse = game.Players.LocalPlayer:GetMouse()
-	game.ReplicatedStorage.Events.Billie.Ultimate-Power:FireServer(mouse.Target)
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		game.ReplicatedStorage.Events.Billie.Ultimate-Power:FireServer(mouse.Target)
 	end    
 })
 
