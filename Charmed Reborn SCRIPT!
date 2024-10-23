@@ -259,6 +259,13 @@ Tab2:AddButton({
   	end    
 })
 
+Tab2:AddButton({
+	Name = "Absorbed all knowledge/ ONLY PHOEBE",
+	Callback = function()
+	game.ReplicatedStorage.Events.Spells["To Absord All Knowledge"]:FireServer()
+  	end    
+})
+
 local Tab3 = Window:MakeTab({
 	Name = "No Hunger!",
 	Icon = "0",
