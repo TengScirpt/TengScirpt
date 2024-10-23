@@ -304,11 +304,11 @@ local Tab4 = Window:MakeTab({
 
 Tab4:AddBind({
 	Name = "Ultimate Power/Christy!",
-	Default = Enum.KeyCode.T,
+	Default = Enum.KeyCode.One,
 	Hold = false,
 	Callback = function()
 	local mouse = game.Players.LocalPlayer:GetMouse()
-	game.ReplicatedStorage.Events.Christy.TelepathicPainInducement:FireServer(mouse.Target)
+	game.ReplicatedStorage.Events.Christy.UltimatePower:FireServer(mouse.Target)
 	end    
 })
 
