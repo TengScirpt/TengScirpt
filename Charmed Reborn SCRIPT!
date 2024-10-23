@@ -312,6 +312,15 @@ Tab4:AddBind({
 	end    
 })
 
+Tab4:AddBind({
+	Name = "Ultimate Power/Billie!",
+	Default = Enum.KeyCode.X,
+	Hold = false,
+	Callback = function()
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	game.ReplicatedStorage.Events.Billie.Ultimate-Power:FireServer(mouse.Target)
+	end    
+})
 
 
 
