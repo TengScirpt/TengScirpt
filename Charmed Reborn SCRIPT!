@@ -212,7 +212,7 @@ Tab2:AddButton({
 Tab2:AddButton({
 	Name = "Illussion Fire Spell",
 	Callback = function()
-        game.ReplicatedStorage.Events.Misc.TurnEvilPhoebe:FireServer()
+	game.ReplicatedStorage.Events.Spells["To Create The Illusion Of Fire"]:FireServer()
   	end    
 })
 
